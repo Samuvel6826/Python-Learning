@@ -1,0 +1,81 @@
+⸻
+
+✅ Problem
+
+Find the Euclidean distance between two points:
+P₁ = (2, 3), \quad P₂ = (10, 8)
+
+⸻
+
+📌 Step 1 – Formula
+
+The Euclidean distance between two points (x₁, y₁) and (x₂, y₂) is:
+
+d = \sqrt{(x₂ - x₁)² + (y₂ - y₁)²}
+
+This comes from the Pythagoras theorem: distance is the hypotenuse of a right-angled triangle formed by horizontal and vertical differences.
+
+⸻
+
+📌 Step 2 – Apply values
+
+d = \sqrt{(10 - 2)² + (8 - 3)²}
+
+d = \sqrt{8² + 5²}
+
+⸻
+
+📌 Step 3 – Square each difference
+
+d = \sqrt{64 + 25}
+
+⸻
+
+📌 Step 4 – Add
+
+d = \sqrt{89}
+
+⸻
+
+📌 Step 5 – Square root
+
+d ≈ 9.433981132
+
+⸻
+
+🐍 Python Solution
+
+import math
+
+# Points
+x1, y1 = 2, 3
+x2, y2 = 10, 8
+
+# Euclidean distance formula
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print("Euclidean Distance:", distance)
+
+Output:
+
+Euclidean Distance: 9.433981132056603
+
+
+⸻
+
+📊 Why 2 squares and 1 square root?
+	•	We square each difference:
+	•	(x₂ - x₁)² = 8² = 64
+	•	(y₂ - y₁)² = 5² = 25
+	•	Then we add them: 64 + 25 = 89
+	•	Finally, one square root gives the actual distance: \sqrt{89}.
+
+👉 This matches the Pythagoras theorem:
+c² = a² + b² \quad \Rightarrow \quad c = \sqrt{a² + b²}
+where a = 8, b = 5, and c = 9.43.
+
+⸻
+
+✅ So the Euclidean distance between (2,3) and (10,8) is √89 ≈ 9.43.
+
+⸻
